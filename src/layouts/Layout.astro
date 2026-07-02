@@ -86,10 +86,23 @@ const {
 			)
 		}
 
+		<!-- Privacy-friendly analytics by Plausible -->
 		<script
-			defer
-			data-domain="cidr.xyz"
-			src="https://track.magicmonad.com/js/script.js"></script>
+			async
+			src="https://track.magicmonad.com/js/pa-tJXTNrj3Etx6rgV9UolDn.js"></script>
+		<script is:inline>
+			window.plausible =
+				window.plausible ||
+				function () {
+					(plausible.q = plausible.q || []).push(arguments);
+				};
+			plausible.init =
+				plausible.init ||
+				function (i) {
+					plausible.o = i || {};
+				};
+			plausible.init();
+		</script>
 		<script
 			async
 			src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}
